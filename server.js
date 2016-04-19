@@ -1,13 +1,19 @@
 var http = require('http'),
-    tasks = require('./routes/tasks.js');
+    tasks = require('./routes/tasks.js'),
+    forever = require('forever');
+
+const GET = 'GET';
 
 http.createServer(function(request,response){
     var url = request.url;
 
     switch (url)
     {
-        case '/':
-            tasks.get(request, response);
+        case '/tasks':
+            if (request.method === GET)
+            {
+                tasks.get(request, response);
+            }
             break;
         default:
             var message = 'route not defined';
@@ -18,5 +24,4 @@ http.createServer(function(request,response){
     }
 }).listen(8080);
 
-console.log('tasks',tasks);
 console.log("Server Running on 8080");

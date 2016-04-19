@@ -1,10 +1,14 @@
-var tasks = module.exports = {
+var forever = require('forever'),
+    tasks = module.exports = {
 
-  get: function (request, response) {
+    get: function (request, response) {
+        forever.list(false, function(err, results) {
 
-        response.writeHeader(200, {"Content-Type": "text/json"});
-        response.write(JSON.stringify([1, 2, 3]));
-        response.end();
+            response.writeHeader(200, {"Content-Type": 'text/plain'});
+            response.write(JSON.stringify(results));
+            response.end();
+
+        });
     }
 
 };
