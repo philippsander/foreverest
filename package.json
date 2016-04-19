@@ -1,0 +1,24 @@
+{
+  "name": "foreverest",
+  "version": "0.0.0",
+  "description": "REST interface for a fluffy NodeJS/Forever administration, wherever you need it",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philippsander/foreverest.git"
+  },
+  "keywords": [
+    "rest",
+    "forver",
+    "monitor"
+  ],
+  "author": "Philipp Sander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philippsander/foreverest/issues"
+  },
+  "homepage": "https://github.com/philippsander/foreverest#readme"
+}
