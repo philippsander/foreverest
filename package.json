@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/philippsander/foreverest/issues"
   },
-  "homepage": "https://github.com/philippsander/foreverest#readme"
+  "homepage": "https://github.com/philippsander/foreverest#readme",
+  "dependencies": {
+    "forever": "^0.15.1"
+  }
 }
