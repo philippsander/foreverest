@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/philippsander/foreverest#readme",
   "dependencies": {
+    "config": "^1.20.1",
     "forever": "^0.15.1"
   }
 }

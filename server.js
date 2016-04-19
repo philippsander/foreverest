@@ -1,6 +1,7 @@
 var http = require('http'),
     tasks = require('./routes/tasks.js'),
-    forever = require('forever');
+    forever = require('forever'),
+    config = require('config');
 
 const GET = 'GET';
 
@@ -22,6 +23,6 @@ http.createServer(function(request,response){
             response.end();
             break;
     }
-}).listen(8080);
+}).listen(config.server.port);
 
-console.log("Server Running on 8080");
+console.log(config.server.port);
